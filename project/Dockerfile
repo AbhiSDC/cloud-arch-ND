@@ -1,7 +1,8 @@
 FROM python:2.7
 LABEL maintainer="Demo"
 
-COPY ./techtrends /techtrends
+# COPY ./techtrends /techtrends
+COPY project/techtrends /techtrends
 WORKDIR /techtrends
 RUN pip install -r requirements.txt
 
