@@ -9,6 +9,6 @@ metadata:
 spec:
   ports:
   - port: {{ .Values.service.port }} 
-    protocol: {{ .Values.service.type }} 
+    protocol: {{ .Values.service.protocol }}
     targetPort: {{ .Values.service.targetPort }} 
-  type: {{ .Values.service.protocol }} 
+  type: {{ .Values.service.type }}
