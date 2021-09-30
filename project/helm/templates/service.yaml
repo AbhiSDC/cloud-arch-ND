@@ -8,7 +8,7 @@ metadata:
   namespace: {{ .Values.namespace.name }}
 spec:
   ports:
-  - port: 4111
-    protocol: TCP
-    targetPort: 3111
-  type: ClusterIP
+  - port: {{ .Values.service.port }} 
+    protocol: {{ .Values.service.type }} 
+    targetPort: {{ .Values.service.targetPort }} 
+  type: {{ .Values.service.protocol }} 
